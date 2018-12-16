@@ -13,40 +13,40 @@
 
 /*FONTS*/
 @font-face {
-  font-family: 'D-DIN';
-  font-style: normal;
-  font-weight: 400;
-  src: local('D-DIN'), local('D-DIN'), url("fonts/D-DIN.woff") format('woff');
+    font-family: 'D-DIN';
+    font-style: normal;
+    font-weight: 400;
+    src: local('D-DIN'), local('D-DIN'), url("fonts/D-DIN.woff") format('woff');
 }
 @font-face {
-  font-family: 'D-DIN';
-  font-style: normal;
-  font-weight: 600;
-  src: local('D-DIN Bold'), local('D-DIN Bold'), url("fonts/D-DIN-Bold.woff") format('woff');
+    font-family: 'D-DIN';
+    font-style: normal;
+    font-weight: 600;
+    src: local('D-DIN Bold'), local('D-DIN Bold'), url("fonts/D-DIN-Bold.woff") format('woff');
 }
 @font-face {
-  font-family: 'DINNextLTPro';
-  font-style: normal;
-  font-weight: 200;
-  src: local('DINNextLTPro Light'), local('DINNextLTPro-Light'), url("fonts/DINNextLTPro-Light.woff") format('woff');
+    font-family: 'DINNextLTPro';
+    font-style: normal;
+    font-weight: 200;
+    src: local('DINNextLTPro Light'), local('DINNextLTPro-Light'), url("fonts/DINNextLTPro-Light.woff") format('woff');
 }
 @font-face {
-  font-family: 'DINNextLTPro';
-  font-style: normal;
-  font-weight: 500;
-  src: local('DINNextLTPro Medium'), local('DINNextLTPro-Medium'), url("fonts/DINNextLTPro-Medium.woff") format('woff');
+    font-family: 'DINNextLTPro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('DINNextLTPro Medium'), local('DINNextLTPro-Medium'), url("fonts/DINNextLTPro-Medium.woff") format('woff');
 }
 @font-face {
-  font-family: 'DINNextLTPro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('DINNextLTPro Regular'), local('DINNextLTPro-Regular'), url("fonts/DINNextLTPro-Regular.woff") format('woff');
+    font-family: 'DINNextLTPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINNextLTPro Regular'), local('DINNextLTPro-Regular'), url("fonts/DINNextLTPro-Regular.woff") format('woff');
 }
 @font-face {
-  font-family: 'LibreBaskerville-Bold.woff';
-  font-style: normal;
-  font-weight: 600;
-  src: local('LibreBaskerville-Bold.woff'), local('aa'), url("fonts/LibreBaskerville-Bold.woff") format('woff');
+    font-family: 'LibreBaskerville';
+    font-style: normal;
+    font-weight: 600;
+    src: local('LibreBaskerville-Bold.woff'), local('aa'), url("fonts/LibreBaskerville-Bold.woff") format('woff');
 }
 
 $lato: 'D-DIN', Arial, sans-serif;

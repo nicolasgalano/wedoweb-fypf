@@ -6,358 +6,323 @@
 }
 
 .container-fluid{
-    max-width:1300px;
+    max-width:1400px;
 }
 
-.loading{
-    //display:none;
-    opacity:0;
-    position: fixed;
-    top:-100%;
-    left:0;
-    width:100%;
-    height: 100%;
-    background: rgba(255,255,255,0.97);
-    z-index: 40;
-    @include transition(all 1s ease);
-    .loader{
-      border: 16px solid #CCC;
-      border-radius: 50%;
-      border-top: 16px solid #0179b3;
-      width: 120px;
-      height: 120px;
-      margin: 45vh auto;
-      -webkit-animation: spin 2s linear infinite; /* Safari */
-      animation: spin 2s linear infinite;
+.row-banner{
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    max-height: 800px;
+    padding:200px 0 0;
+    h2{
+        font-family: 'DINNextLTPro';
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 85px;
+        color:#FFF;
+        margin-bottom:37px;
     }
-    &.on{
-        top:0;
-        opacity:1;
+    p{
+        font-family: 'DINNextLTPro';
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 30px;
+        color:#FFF;
     }
-}
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+
 }
 
+.row-damero{
 
-.row-main{
-    position:relative;
-    .overlay{
-        position:absolute;
-        top:0;
-        left:0;
-        background-color: rgba(0,0,0,0.1);
-        width:100%;
-        height: 100%;
-        z-index: 2;
-        @media(max-width: 600px){
-            font-size:40px;
-            padding:0 20px;
-            text-shadow: 0 1px 12px rgba(0,0,0,0.5);
+    background:#753BBD;
+    padding:78px 50px;
+
+    ul{
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;
+        border:2px solid #00CFB4;
+        padding:0;
+        margin:0 2px 0 0;
+        li{
+            -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+            -moz-box-flex: 1;         /* OLD - Firefox 19- */
+            width: 20%;               /* For old syntax, otherwise collapses. */
+            -webkit-flex: 1;          /* Chrome */
+            -ms-flex: 1;              /* IE 10 */
+            flex: 1;
+            list-style: none;
+            font-family: 'DINNextLTPro';
+            font-weight: 200;
+            font-size: 23px;
+            line-height:23px;
+            color:#00CFB4;
+            border-right:2px solid #00CFB4;
+            padding:19px 0 17px;
+            margin:0;
+            text-align: center;
+            cursor:pointer;
+            &:last-child{
+                border-right:none;
+            }
         }
     }
-    .content{
-        position:absolute;
-        top:25vh;
-        right:80px;
-        z-index: 10;
-        @media(max-width: 760px){
-            right:auto;
-            width:100%;
-        }
-        @media(max-width: 500px){
-            height:50vh;
-            top:28vh;
-        }
-        .prestamo-link{
-            text-align: right;
-            p{
-                font-family: 'Ubuntu';
-                font-size:60px;
-                font-weight: 400;
-                color:#FFF;
-                text-shadow: 0 3px 8px rgba(0,0,0,0.3);
-                @media(max-width: 760px){
-                    width: 100%;
-                    text-align: center;
-                }
-                @media(max-width: 600px){
-                    font-size:40px;
-                    padding:0 20px;
-                    text-shadow: 0 1px 12px rgba(0,0,0,0.5);
-                }
+    .links{
+        border:2px solid #a27ad2;
+        border-top:none;
+        border-bottom:none;
+        border-right:none;
+        a{
+            border:2px solid #a27ad2;
+            border-top:none;
+            border-left:none;
+            height:256px;
+            color:#FFF;
+            font-family: 'D-DIN';
+            font-size:38px;
+            line-height:38px;
+            font-weight: bold;
+            text-align: center;
+            display: table;
+            span{
+                display: table-cell;
+                vertical-align: middle;
             }
-            .btn{
-                background:#00bfa9;
-                font-weight: 400;
-                font-size:28px;
-                font-family:'Ubuntu';
-                margin:0;
-                border-radius:8px;
-                box-shadow: 0 3px 4px rgba(0,0,0,0.3);
-                text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-                width: auto !important;
-                padding: 6px 26px;
-                transition: all .5s;
-                &.sticker{
-                    display:inline-block;
-                    top:20px;
-                    right:50px;
-                }
-                &.sticker2{
-                    display:none;
-                    top:auto;
-                    right:auto;
-                }
-                @media(max-width: 760px){
-                    width: 92% !important;
-                    bottom: 20px;
-                    position: fixed;
-                    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.3);
-                    background-color: #00bf57;
-                    &.sticker{
-                        display:none;
-                    }
-                    &.sticker2{
-                        display:block;
-                        right: 4%;
-                    }
-                }
-                &:hover{
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
-                }
-            }
-            .sticky-wrapper.is-sticky{
-                @media(max-width: 760px){
-                    display:none;
-                }
-            }
-            .sticky-wrapper.is-sticky .btn{
-                right: 30px;
-                background:#00bf6b;
-                box-shadow: 0 3px 18px rgba(0,0,0,0.3) !important;
+            &.tipo1{
+                padding: 68px 0 0;
+                img{
 
+                }
             }
-
+            &.tipo2{
+                padding: 0;
+                font-size:42px;
+                line-height:250px;
+                text-transform: uppercase;
+            }
+            &.tipo3{
+                background-position: top left;
+                background-repeat: no-repeat;
+            }
         }
+    }
+
+}
+
+
+.row-premios{
+    background:#00CFB4;
+    position: relative;
+    .swiper-button-next,
+    .swiper-button-prev{
+        padding:20px;
+        border-radius:10px;
+        top:46%;
+        color:#FFF;
+        background-size:auto;
+        cursor:pointer;
+    }
+    .swiper-button-next{
+        background-image:url('../images/im_arrow-right.png');
+    }
+    .swiper-button-prev{
+        background-image:url('../images/im_arrow-left.png');
     }
     .swiper-slide{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height:60vh;
-        width:100%;
-        @media(max-width: 500px){
-            height:50vh;
-        }
-        @media(max-width: 400px){
-            height:45vh;
-        }
-    }
-}
 
-.row-example{
-    position:relative;
-    min-height:39vh;
-    padding: 8vh 30px 8vh;
-    background-color:#00bfa9;
-    //background:#00bfa9 url('../images/guillo.png') no-repeat;
-    //background-position: 0 0;
-    p{
+    }
+    .container-fluid{
+        max-width: none;
+    }
+    .container-fluid > .row > div{
+        height: 68vh;
+        max-height:800px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .overlay{
+        background-size: cover;
+        background-position: center center;
+        background-image: url('../images/dg_premios-overlay.png');
         width:100%;
-        max-width:600px;
-        margin:0 auto;
-        font-family: 'Ubuntu';
-        font-size:40px;
-        font-weight: 400;
-        text-align: center;
+        height:100%;
+        position:absolute;
+        top: 0;
+        left:0;
+    }
+    h4{
+        color:#5959FF;
+        font-family: 'LibreBaskerville';
+        font-size:22px;
+        line-height:30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin:88px 0 20px;
+        padding:0 30px;
+    }
+    h3{
+        font-family: 'D-DIN';
+        font-size:60px;
+        line-height:65px;
+        font-weight: bold;
         color:#FFF;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.3);
-        span{
-            display:block;
-            font-size:50px;
-            font-weight: 500;
-        }
-        @media(max-width: 650px){
-            font-size:30px;
-            span{
-                font-size:40px;
+        margin:0px 0 31px;
+        padding:0 30px;
+    }
+    .sep{
+        height:1px;
+        border-bottom:2px solid #5959ff;
+        width:100px;
+        margin:0 0 46px 33px;
+    }
+    p{
+        color:#FFF;
+        font-family: 'D-DIN';
+        font-size:24px;
+        line-height:30px;
+        font-weight: 400;
+        margin:0 0 84px 0px;
+        padding:0 30px;
+    }
+    .botones{
+        border:2px solid #5959FF;
+        padding:0;
+        margin:0 30px 80px;
+        float:left;
+        a{
+            display: inline-block;
+            font-size:20px;
+            line-height:30px;
+            border-right:2px solid #5959FF;
+            color:#5959FF;
+            padding:6px 28px;
+            &:last-child{
+                border-right:0;
             }
         }
     }
 
-    i{
-        position:absolute;
-        color:rgba(255,255,255,0.7);
-        font-size: 60px;
-        text-shadow: 0 1px 8px rgba(0,0,0,0.1);
-        &.money-1{
-            top:20px;
-            left:20px;
-        }
-        &.money-2{
-            top:20px;
-            right:20px;
-        }
-        &.money-3{
-            bottom:20px;
-            left:20px;
-        }
-        &.money-4{
-            bottom:20px;
-            right:20px;
-        }
-        @media(max-width: 650px){
-            display:none;
-        }
-    }
 }
 
-.row-reqs{
-    padding: 50px 30px 50px;
-    background-color:#0179b3;
-    h2{
-        font-family: 'Ubuntu';
+
+.row-videos{
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg_videos.jpg');
+    padding:45px 0;
+    .videos{
+        width:960px;
+        margin:0 auto;
+        .primario{
+            height: 530px;
+            width:100%;
+            iframe{
+                height: 100%;
+                width:100%;
+                float: left;
+            }
+        }
+        .lista{
+            display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox;      /* TWEENER - IE 10 */
+            display: -webkit-flex;     /* NEW - Chrome */
+            display: flex;
+            border-top:1px solid #dcdbd9;
+            .thumbnail{
+                -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+                -moz-box-flex: 1;         /* OLD - Firefox 19- */
+                width: 20%;               /* For old syntax, otherwise collapses. */
+                -webkit-flex: 1;          /* Chrome */
+                -ms-flex: 1;              /* IE 10 */
+                flex: 1;
+                height:90px;
+                background-position: center center;
+                background-size: cover;
+                position: relative;
+                border-right:1px solid #dcdbd9;
+                cursor:pointer;
+                &:last-child{
+                    border-right:0;
+                }
+                .overlay{
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background:url('../images/ic_video-small.png') center center no-repeat;
+                    background-color:rgba(200, 200, 200, 0.3);
+                }
+            }
+        }
+
+    }
+
+}
+
+.row-alianzas{
+
+    h4{
+        color:#000;
+        font-family: 'LibreBaskerville';
+        font-size:24px;
+        line-height:30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin:88px 0 20px;
+        padding:0 30px;
+    }
+    p{
+        color:#0000FF;
+        font-family: 'D-DIN';
         font-size:40px;
+        line-height:55px;
         font-weight: 400;
-        color:#FFF;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.3);
-        text-align: left;
-        margin:20px 0 40px;
+        letter-spacing: 1px;
+        margin:88px 0 20px;
+        padding:0 30px;
     }
     ul{
-        margin:0;
-        padding:0;
+        width:100%;
+        max-width:400px;
         li{
-            margin:0;
-            padding:0 0 20px;
-            list-style: none;
-            width:50%;
-            float:left;
-            @media(max-width: 1000px){
-                width:100%;
-            }
+            list-style:none;
+            padding:34px;
+            border:2px solid #000;
             i{
+                display: block;
                 width:60px;
-                font-size:34px;
-                color:#FFF;
-                text-align: center;
-                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-                float: left;
-                @media(max-width: 650px){
-                    width:45px;
-                    font-size:30px;
-                }
+                height:60px;
+                float:left;
+
             }
             span{
-                position:relative;
-                top:2px;
-                font-family: 'Ubuntu';
+                width:calc(100% - 60px);
+                float:left;
+                color:#000;
+                font-family: 'D-DIN';
                 font-size:23px;
-                font-weight: 400;
-                letter-spacing: .5px;
-                color:#FFF;
-                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-                @media(max-width: 650px){
-                    font-size:20px;
-                    letter-spacing: 0px;
-                }
+                line-height:28px;
+                font-weight: 600;
             }
         }
-
     }
+
 }
 
-.row-contact{
-    padding: 50px 30px 40px;
-    background:url(../images/contacto/bg.jpg) center center no-repeat;
-    background-size: cover;
-    h2{
-        font-family: 'Ubuntu';
-        font-size:40px;
-        font-weight: 400;
-        color:#FFF;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.3);
-        text-align: left;
-        margin:10px 0 10px;
-    }
-    .cajas{
-        text-align: center;
-    }
-    .caja{
-        display:inline-block;
-        text-align: center;
-        padding:20px 30px;
-        color:#FFF;
-        float: right;
-        font-family: 'Ubuntu';
-        font-size:25px;
-        font-weight: 300;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.3);
-        i{
-            float: left;
-            border:4px solid #FFF;
-            border-radius: 40px;
-            width:68px;
-            height:68px;
-            text-align: center;
-            font-size:30px;
-            color:#FFF;
-            line-height: 62px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
-            margin-bottom:10px;
-            margin-right:20px;
-        }
-        span{
-            width:100%;
-            display:inline-block;
-            padding: 10px 0 1px;
-        }
-        b{
-            /* width: 100%; */
-            display: inline-block;
-            float: left;
-            font-size: 60px;
-            line-height: 64px;
-        }
-    }
-    @media(max-width: 992px){
-        h2{
-            text-align: center;
-        }
-        .caja{
-            float: none;
-        }
-    }
-    @media(max-width: 650px){
-        h2{
-            text-align: center;
-            font-size:25px;
-        }
-        .caja{
-            float: none;
-            i{
-                font-size:22px;
-                float:none;
-            }
-            b{
-                font-size: 40px;
-                line-height: 44px;
-                float:none;
-            }
-        }
-    }
-    @media(max-width: 408px){
-        .caja{
-            i{
-                margin-right:0;
-            }
-        }
-    }
+
+
+
+
+
+
+
+@media(max-width: 408px){
+
 }

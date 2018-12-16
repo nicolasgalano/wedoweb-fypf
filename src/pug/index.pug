@@ -8,15 +8,15 @@ block header
             
 block content
     
-    .section-row.row-banner
+    .section-row.row-banner(style="background-image:url('images/bg_banner.jpg');")
         .container-fluid
             .row
                 
-                .col-sm-12
+                .col-sm-12.col-lg-7
         
-                    h2 La energíaque nos inspira aaprender e innovar
+                    h2 La energía<br>que nos inspira a<br>aprender e innovar
                     
-                    p Fundación YPF LAB es un espacio de interacción y participaciónpara potenciar el conocimiento y la investigación en energía a travésde contenidos, actividades, premios y concursos.
+                    p Fundación YPF LAB es un espacio de interacción y participación para potenciar el conocimiento y la investigación en energía a través de contenidos, actividades, premios y concursos.
                     
         
     .section-row.row-damero
@@ -26,27 +26,33 @@ block content
                 .col-sm-12
                     
                     ul
-                        li EDUCACIÓN PRIMARIA  
-                        li EDUCACIÓN SECUNDARIA 
-                        li EDUCACIÓN TÉC. PROFESIONAL
-                        li EDUCACIÓN UNIVERSITARIA
-                        li EDUCACIÓN CIUDADANA
-                        
-                    .links
-                        
-                        a.tipo1(href="#")
+                        li EDUCACIÓN<br>PRIMARIA  
+                        li EDUCACIÓN<br>SECUNDARIA 
+                        li EDUCACIÓN<br>TÉC. PROFESIONAL
+                        li EDUCACIÓN<br>UNIVERSITARIA
+                        li EDUCACIÓN<br>CIUDADANA
+                    
+                    .container-fluid
+                        .links.row
                             
-                        a.tipo1(href="#")
-                            
-                        a.tipo2(href="#")
-                            
-                        a.tipo3(href="#")
-                                   
-                        a.tipo3(href="#")
-                            
-                        a.tipo3(href="#")
-        
-        
+                            a#link-1.col-sm-12.col-md-4.tipo1(href="#")
+                                img(src="images/im_damero-1.png")
+                                
+                            a#link-2.col-sm-12.col-md-4.tipo1(href="#")
+                                img(src="images/im_damero-2.png")
+                                
+                            a#link-3.col-sm-12.col-md-4.tipo2(href="#")
+                                span Vocaciones
+                            a#link-4.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-4.png');")
+                                span Educación<br>Técnico<br>Profesional
+                                       
+                            a#link-5.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-5.png');")
+                                span MOOC y<br>Universidades
+                                
+                            a#link-6.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-6.png');")
+                                span Desarrollo Local
+                                
+                                
     .section-row.row-premios
         
         .swiper-container
@@ -56,14 +62,17 @@ block content
                     .container-fluid
                         .row
                             
-                            .col-sm-12.col-md-6(style="backgroud-image:url('images/iii.jpg');")
-                                
+                            .col-sm-12.col-md-6(style="background-image:url('images/dummie/bg_premios.jpg');")
+                                .overlay
+                                    
                             .col-sm-12.col-md-6
                                 
-                                h4 Premios 2018
+                                h4 Premios 2017
                                 
                                 h3 Convocatoria a premios y concursos
                                 
+                                .sep
+                                    
                                 p Invitamos a poner en valor las ideas y proyectosque promuevan la educación de calidad y el desarrollo sostenible de las comunidades confoco en la energía y el impacto social.
                                 
                                 .botones
@@ -71,19 +80,22 @@ block content
                                     a(href="#") Estudiantes Ingresantes
                                     
                                     a(href="#") Estudiantes Avanzados
-                
+                                    
                 .swiper-slide
                     .container-fluid
                         .row
                             
-                            .col-sm-12.col-md-6(style="backgroud-image:url('images/iii.jpg');")
-                                
+                            .col-sm-12.col-md-6(style="background-image:url('images/dummie/bg_premios.jpg');")
+                                .overlay
+                                    
                             .col-sm-12.col-md-6
                                 
                                 h4 Premios 2018
                                 
                                 h3 Convocatoria a premios y concursos
                                 
+                                .sep
+                                    
                                 p Invitamos a poner en valor las ideas y proyectosque promuevan la educación de calidad y el desarrollo sostenible de las comunidades confoco en la energía y el impacto social.
                                 
                                 .botones
@@ -91,6 +103,9 @@ block content
                                     a(href="#") Estudiantes Ingresantes
                                     
                                     a(href="#") Estudiantes Avanzados
+        
+        .swiper-button-next
+        .swiper-button-prev
     
     
     .section-row.row-videos
@@ -104,31 +119,31 @@ block content
                         .primario
                             iframe(width="560", height="315", src="https://www.youtube.com/embed/IvJLTw4jmZs", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
                         .lista
-                            .thumbnail
-                                img(src="images/iii.jpg")
-                            .thumbnail
-                                img(src="images/iii.jpg")
-                            .thumbnail
-                                img(src="images/iii.jpg")
-                            .thumbnail
-                                img(src="images/iii.jpg")
-                            .thumbnail
-                                img(src="images/iii.jpg")
-                            .thumbnail
-                                img(src="images/iii.jpg")
+                            .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                .overlay
+                            .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                .overlay
+                            .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                .overlay
+                            .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                .overlay
+                            .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                .overlay
+                            .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                .overlay
                         
             
     .section-row.row-alianzas
         
         .container-fluid
             .row
-                .col-sm-12.col-md-7
+                .col-sm-12.col-md-8
                     
                     h4 Alianzas Estratégicas
                     
                     p En Fundación YPF, nos unimos a quienes tienen el conocimiento, la experienciay son parte de las esferas pública, público-privada y de la sociedad civil.Con todos ellos implementamos nuestros programas para lograr los objetivos de desarrollo sostenible.
                     
-                .col-sm-12.col-md-5
+                .col-sm-12.col-md-4
                     
                     ul
                         li

@@ -17,12 +17,19 @@
         //SWIPER
         var swiper = new Swiper('.swiper-container', {
             loop: true,
-            effect: 'fade',
-            speed: 2500,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             }
+        });
+
+        $('.thumbnail').click(function(){
+            console.log('https://www.youtube.com/embed/'+$(this).attr('data-yt'));
+            $('.videos .primario iframe').attr('src','https://www.youtube.com/embed/'+$(this).data('yt'));
         });
 
     });
