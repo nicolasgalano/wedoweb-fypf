@@ -19,13 +19,17 @@ block content
                     p Fundación YPF LAB es un espacio de interacción y participación para potenciar el conocimiento y la investigación en energía a través de contenidos, actividades, premios y concursos.
                     
         
-    .section-row.row-damero
+    .section-row.row-damero#educacion
         .container-fluid
             .row
                 
+                .col-sm-12.titulo
+                
+                    h4 Educación
+                
                 .col-sm-12.selectioner
                     select
-                        option(value="[0]") Seleccionar una categoría...
+                        option(value="[0]") Todos los programas
                         option(value="[1,2]") EDUCACIÓN PRIMARIA
                         option(value="[3,4]") EDUCACIÓN SECUNDARIA 
                         option(value="[5,6]") EDUCACIÓN TÉC. PROFESIONAL
@@ -44,25 +48,65 @@ block content
                     .container-fluid
                         .links.row
                             
-                            a#link-1.col-sm-6.col-md-4.tipo1(href="#")
-                                img(src="images/im_damero-1.png")
-                                
-                            a#link-2.col-sm-6.col-md-4.tipo1(href="#")
+                            #link-1.col-sm-6.col-md-4.tipo1(href="#")
+                                img(src="images/im_damero-1.png")    
+                                .overlay
+                                    p Fundación YPF y Fundación Voz, buscan fortalecer la enseñanza de las ciencias, en el marco dela transformación del nivel secundario.
+                                    
+                                    a(href="#", target="_blank") 
+                                        | Conocer más 
+                                        i →
+                                    
+                            #link-2.col-sm-6.col-md-4.tipo1(href="#")
                                 img(src="images/im_damero-2.png")
+                                .overlay
+                                    p Fundación YPF y Fundación Voz, buscan fortalecer la enseñanza de las ciencias, en el marco dela transformación del nivel secundario.
+
+                                    a(href="#", target="_blank") 
+                                        | Conocer más 
+                                        i →
                                 
-                            a#link-3.col-sm-6.col-md-4.tipo2(href="#")
+                            #link-3.col-sm-6.col-md-4.tipo2(href="#")
                                 span Vocaciones
-                            a#link-4.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-4.png');")
+                                .overlay
+                                    p Fundación YPF y Fundación Voz, buscan fortalecer la enseñanza de las ciencias, en el marco dela transformación del nivel secundario.
+
+                                    a(href="#", target="_blank") 
+                                        | Conocer más 
+                                        i →
+                                
+                            #link-4.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-4.png');")
                                 span Educación<br>Técnico<br>Profesional
+                                .overlay
+                                    p Fundación YPF y Fundación Voz, buscan fortalecer la enseñanza de las ciencias, en el marco dela transformación del nivel secundario.
+
+                                    a(href="#", target="_blank") 
+                                        | Conocer más 
+                                        i →
                                        
-                            a#link-5.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-5.png');")
+                            #link-5.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-5.png');")
                                 span MOOC y<br>Universidades
+                                .overlay
+                                    p Ejemplo de texto.
+
+                                    a(href="#1", target="_blank")
+                                        | Conocer más 
+                                        i →
+                                    a(href="#2", target="_blank")
+                                        | Conocer más 
+                                        i →
                                 
-                            a#link-6.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-6.png');")
+                            #link-6.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-6.png');")
                                 span Desarrollo Local
+                                .overlay
+                                    p Fundación YPF y Fundación Voz, buscan fortalecer la enseñanza de las ciencias, en el marco dela transformación del nivel secundario.
+
+                                    a(href="#", target="_blank") 
+                                        | Conocer más 
+                                        i →
                                 
                                 
-    .section-row.row-premios
+    .section-row.row-premios#premios
         
         .swiper-container
             .swiper-wrapper
@@ -127,7 +171,50 @@ block content
                     .videos
                         .primario
                             iframe(width="560", height="315", src="https://www.youtube.com/embed/IvJLTw4jmZs", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                        
                         .lista
+                            
+                            .swiper-container
+                                
+                                .swiper-wrapper
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
+                                            .overlay
+                                    
+                                    .swiper-slide
+                                        .thumbnail(data-yt="IvJLTw4jmZs", style="background-image:url('http://i.ytimg.com/vi/IvJLTw4jmZs/hqdefault.jpg');")
+                                            .overlay
+                                
+                            .swiper-button-next
+                            .swiper-button-prev
+                        
+                        
+                        .lista.hidden    
                             .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
                                 .overlay
                             .thumbnail(data-yt="yXrlhebkpIQ", style="background-image:url('http://i.ytimg.com/vi/yXrlhebkpIQ/hqdefault.jpg');")
@@ -142,10 +229,9 @@ block content
                                 .overlay
                         
             
-    .section-row.row-alianzas
+    .section-row.row-alianzas#alianzas
         
         .container-fluid
-            
             
             .row
                 
@@ -160,19 +246,19 @@ block content
                         option(value="tab-1") Seleccionar una categoría...
                         option(value="tab-2") Universidades y Organismos Académicos
                         option(value="tab-3") Sector Público
-                        option(value="tab-4") Sociedas Civil
+                        option(value="tab-4") Sociedad Civil
                 
                 .col-sm-12.col-md-4.col-md-push-8
                     
                     ul.botones
                         li(data-tab="2")
-                            i(style="background-image:url('images/im_alianza-1.png');")
+                            i(style="background-image:url('images/gifs/icono_universidades_animado.gif');")
                             span Universidades y Organismos Académicos
                         li(data-tab="3")
-                            i(style="background-image:url('images/im_alianza-2.png');")
+                            i(style="background-image:url('images/gifs/icono_sociedadcivil_animado.gif');")
                             span Sector Público
                         li(data-tab="4")
-                            i(style="background-image:url('images/im_alianza-3.png');")
+                            i(style="background-image:url('images/gifs/icono_sectorpublico_animado.gif');")
                             span Sociedas Civil
                             
                 .col-sm-12.col-md-8.col-md-pull-4
@@ -238,7 +324,7 @@ block content
                         
 
 
-    .section-row.row-recomendados
+    .section-row.row-recomendados#sitios
     
         .container-fluid
             .row

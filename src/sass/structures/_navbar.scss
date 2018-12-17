@@ -12,17 +12,20 @@ nav{
     left:0;
     width:100%;
     z-index: 11;
+    padding:35px 0 0;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 
     h1{
         float:left;
-        margin:35px 0 0 50px;
+        margin:0px 0 0 50px;
         padding: 0;
         border-radius: 10px;
         a{
             display:block;
             width:196px;
             height: 65px;
-            background:url(../images/logo.png) center center no-repeat;
+            background:url(../images/gifs/logo_animado.gif) center center no-repeat;
             background-size: contain;
             @media(max-width: 650px){
                 width:196px;
@@ -30,7 +33,7 @@ nav{
             }
         }
         @media(max-width: 800px){
-            margin:32px 0 0 30px;
+            margin:0px 0 0 30px;
         }
     }
 
@@ -41,15 +44,17 @@ nav{
         height:40px;
         background:url(../images/menu.png) center center no-repeat;
         background-size: contain;
-        @media(max-width: 1000px){
+        @media(max-width: 900px){
             display:block;
-            margin:48px 30px 0 32px;
+            margin:13px 30px 0 32px;
         }
     }
 
     ul.menu{
         float:right;
-        padding:56px 50px 0 0;
+        padding:21px 50px 0 0;
+        -webkit-transition: all 1s; /* Safari */
+        transition: all 1s;
         li{
             list-style:none;
             display:inline-block;
@@ -63,29 +68,49 @@ nav{
 
             }
         }
-        @media(max-width: 1000px){
-            display:none;
-            padding:10px 20px;
-            margin:100px 20px 0 0;
-            width:270px;
-            border-radius:8px;
-            background:rgba(255,255,255,0.4);
+        @media(max-width: 900px){
+            display:block;
+            padding:10px 0px;
+            margin:100px 0px 0 0;
+            width:100%;
+            border-top:3px solid #87b2ac;
             position: absolute;
             top: 0;
             right:0;
-            &.active{
-                display:block;
-            }
+            opacity:0;
             li{
                 width:100%;
-                padding:10px 10px;
+                padding:0px;
+                border-bottom:1px solid #95c7c0;
                 a{
+                    display:block;
+                    width:100%;
+                    padding:17px 30px;
                     font-size:18px;
                     &:hover{
                         text-decoration: underline;
                     }
                 }
             }
+        }
+    }
+
+    @media(max-width: 900px){
+        position: fixed;
+        padding:10px 0 10px;
+        background:rgba(255,255,255,0.4);
+        height:85px;
+        overflow:hidden;
+        &.mobile-open{
+            width:100%;
+            height:100%;
+            background:#b2f1e8;
+
+            ul.menu{
+                display:block;
+                opacity:1;
+            }
+
         }
     }
 
