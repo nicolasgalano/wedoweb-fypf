@@ -19,19 +19,19 @@ Base HTML del proyecto.
 
 ## Local setup
 
-1. **Go into the root of the project** with the next line:
+1. **Go into the root of the project**
 	```shell
-	$ cd html
+	$ cd wedoweb-fypf
 	```
 
 2. **Install JS dependencies**
 	```shell
-	# @ root-folder/html
+	# @ root-folder/
 	$ npm install
 	```
 
 3. **Run Gulp serve**
 	```shell
-	# @ root-folder/html
+	# @ root-folder/
 	$ gulp watch
 	```
