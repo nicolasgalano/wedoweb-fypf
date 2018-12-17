@@ -50,10 +50,16 @@
 
         //ALIANZAS
         $('.row-alianzas ul.botones li').click(function() {
-            $('.row-alianzas ul.botones li').removeClass('active');
-            $(this).addClass('active');
-            $('.row-alianzas .alianzas-tabs .tab').removeClass('active');
-            $('.row-alianzas .alianzas-tabs .tab.tab-'+$(this).data('tab')).addClass('active');
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('.row-alianzas .alianzas-tabs .tab').removeClass('active');
+                $('.row-alianzas .alianzas-tabs .tab.tab-1').addClass('active');
+            }else{
+                $('.row-alianzas ul.botones li').removeClass('active');
+                $(this).addClass('active');
+                $('.row-alianzas .alianzas-tabs .tab').removeClass('active');
+                $('.row-alianzas .alianzas-tabs .tab.tab-'+$(this).data('tab')).addClass('active');
+            }
         });
         $('.row-alianzas .selectioner select').change(function() {
             $('.row-alianzas .alianzas-tabs .tab').removeClass('active');
@@ -72,7 +78,6 @@
         $('.row-damero .links > div').click(function(){
             $(this).toggleClass('clicked');
         });
-
         $('.row-damero ul.categorias li').click(function(){
             $('.row-damero ul.categorias li').removeClass('active');
             $('.row-damero .links > div').removeClass('hidden');

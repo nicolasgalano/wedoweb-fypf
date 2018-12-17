@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     height:100vh;
     max-height: 800px;
+    min-height: 600px;
     padding:200px 0 0;
     @media(max-width: 650px){
         height:auto;
@@ -29,6 +30,8 @@
         margin-bottom:37px;
         margin:0 30px 37px;
         @media(max-width: 800px){
+            font-size: 32px;
+            line-height: 38px;
             br{
                 display:none;
             }
@@ -41,6 +44,10 @@
         line-height: 30px;
         color:#FFF;
         margin:0 30px 80px;
+        @media(max-width: 800px){
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
 }
@@ -51,7 +58,7 @@
     padding:78px 50px;
 
     @media(max-width: 600px){
-        padding:70px 30px;
+        padding:50px 10px;
     }
 
     .titulo{
@@ -174,6 +181,8 @@
             }
             @media (max-width: 768px){
                 height:220px;
+                font-size:30px;
+                line-height:32px;
                 &.col-sm-6 {
                     width: 100%;
                 }
@@ -182,6 +191,7 @@
                 }
                 &.tipo2{
                     line-height:220px;
+                    font-size:34px;
                 }
             }
             .overlay{
@@ -283,12 +293,14 @@
     .container-fluid > .row > div{
         height: 68vh;
         max-height:800px;
+        min-height: 600px;
         background-size: cover;
         background-position: center center;
     }
     @media(max-width: 1200px){
         .image{
             height:300px !important;
+            min-height: 0 !important;
         }
         .container-fluid > .row > div{
             height: auto;
@@ -314,6 +326,10 @@
         letter-spacing: 1px;
         margin:88px 0 20px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:18px;
+            line-height:22px;
+        }
     }
     h3{
         font-family: 'D-DIN';
@@ -323,6 +339,10 @@
         color:#FFF;
         margin:0px 0 31px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:30px;
+            line-height:35px;
+        }
     }
     .sep{
         height:1px;
@@ -338,6 +358,10 @@
         font-weight: 400;
         margin:0 0 84px 0px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:20px;
+            line-height:26px;
+        }
     }
     .botones{
         padding:0;
@@ -354,7 +378,10 @@
                 border-left:0;
             }
             @media(max-width: 650px){
-                margin: 0 0 4px;
+                font-size:18px;
+                line-height:28px;
+                text-align: center;
+                margin: 4px 8px 4px 0;
                 &:last-child{
                     border-left:2px solid #5959FF;
                 }
@@ -487,6 +514,10 @@
         letter-spacing: 1px;
         margin:90px 0 20px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:20px;
+            line-height:26px;
+        }
     }
     p{
         color:#0000FF;
@@ -497,6 +528,10 @@
         letter-spacing: 1px;
         margin:0px 0 10px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:20px;
+            line-height:30px;
+        }
     }
     .alianzas-tabs{
         margin:35px 0 10px;
@@ -674,6 +709,10 @@
         letter-spacing: 1px;
         margin:90px 0 25px;
         padding:0 30px;
+        @media(max-width: 800px){
+            font-size:20px;
+            line-height:26px;
+        }
     }
 
     ul{
@@ -697,6 +736,10 @@
                 line-height:50px;
                 font-weight: 600;
                 padding:35px 20px 30px 45px;
+                @media(max-width: 800px){
+                    font-size:22px;
+                    line-height:30px;
+                }
                 span{
                     font-size:25px;
                     font-weight: 400;

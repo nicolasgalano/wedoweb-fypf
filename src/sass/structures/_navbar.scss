@@ -28,7 +28,7 @@ nav{
             background:url(../images/gifs/logo_animado.gif) center center no-repeat;
             background-size: contain;
             @media(max-width: 650px){
-                width:196px;
+                width:150px;
                 margin:0 auto;
             }
         }
@@ -47,6 +47,9 @@ nav{
         @media(max-width: 900px){
             display:block;
             margin:13px 30px 0 32px;
+        }
+        @media(max-width: 650px){
+            width:30px;
         }
     }
 

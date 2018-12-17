@@ -20,6 +20,9 @@ footer {
             width:240px;
             margin:0 auto 30px;
         }
+        @media(max-width: 800px){
+            width:200px;
+        }
     }
     p.copyright{
         font-family: 'Rubik';
@@ -56,6 +59,9 @@ footer {
                 &.yt{
                     background-position:-114px 0;
                 }
+            }
+            @media(max-width: 990px){
+                margin:0px 9px 0 9px;
             }
         }
         @media(max-width: 990px){
