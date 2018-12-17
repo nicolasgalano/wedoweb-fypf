@@ -6,98 +6,117 @@
 
 footer {
     position: relative;
-    padding:10px 50px 30px;
+    padding:80px 0px 80px;
     text-align: center;
-    background:#1a6a9d;
-    @media(max-width: 800px){
-        padding:20px 20px;
-    }
-    a.logo{
-        display: block;
-        position:absolute;
-        top:30px;
-        left:50px;
-    }
+    background:#262626;
 
-    p.copyright{
-        line-height: 68px;
-        margin:0;
-        font-family:'Roboto';
-        font-size: 14px;
-        text-align: left;
-        float: left;
-        padding:2px 0 0;
-        margin:0;
-        color:#FFF;
-        text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        @media(max-width: 992px){
-            text-align: center;
-            width:100%;
-            font-size: 12px;
-            line-height: 18px;
-            padding:10px 0 20px;
+    a.logo{
+        display:block;
+        width:240px;
+        height: 52px;
+        background:url(../images/logo-ft.png) center center no-repeat;
+        background-size: contain;
+        @media(max-width: 990px){
+            width:240px;
+            margin:0 auto 30px;
         }
     }
-
+    p.copyright{
+        font-family: 'Rubik';
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color:#A0A0A0;
+        @media(max-width: 990px){
+            margin-bottom:30px;
+        }
+    }
     ul.redes{
-        padding:10px 0 0;
-        float: right;
+        padding:10px 0 70px;
+        width:100%;
         li{
-            float:left;
+            display: inline-block;
             list-style:none;
             margin:0px 0 0 18px;
             text-align: center;
             a{
                 display:block;
-                width:48px;
-                height:48px;
-                border:3px solid #FFF;
-                border-radius: 30px;
-                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            }
-            i{
-                font-size:28px;
-                color:#FFF;
-                line-height: 43px;
-                text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            }
-            @media(max-width: 600px){
-                margin:0px 0 0 6px;
+                width:36px;
+                height:36px;
+                background:url('../images/sp_redes.png') center center no-repeat;
+                &.fb{
+                    background-position:0 0;
+                }
+                &.tw{
+                    background-position:-38px 0;
+                }
+                &.in{
+                    background-position:-76px 0;
+                }
+                &.yt{
+                    background-position:-114px 0;
+                }
             }
         }
-        @media(max-width: 992px){
-            width:100%;
-            text-align: center;
-            li{
-                float:none;
-                display:inline-block;
-            }
+        @media(max-width: 990px){
+            padding-bottom:30px;
         }
     }
-
-    .disclaimer{
-        padding:30px 15px 0;
-        margin:10px auto 0;
-        text-align: right;
-        border-top:2px solid #007bb1;
-        @media(max-width: 992px){
-            padding-right:0;
-            padding-left:0;
-        }
-        p{
-            font-family:'Roboto';
-            font-size:12px;
+    ul.menu{
+        margin:0 30px 0 30px;
+        padding:0;
+        li{
+            list-style: none;
             text-align: left;
-            color:#FFF;
-            padding-bottom:20px;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        }
-        a.afip{
-            display:inline-block;
-            width:50px;
-            img{
-                width:100%;
+            padding:0 0 22px;
+            a{
+                font-size:16px;
+                line-height: 20px;
+                color:#FFF;
+                font-family: 'D-DIN';
+                font-weight: bold;
+                text-align: left;
+                &:hover{
+                    text-decoration: underline;
+                }
+                @media(max-width: 990px){
+                    text-align: center;
+                }
             }
+            @media(max-width: 990px){
+                text-align: center;
+            }
+        }
+        @media(max-width: 990px){
+            margin:30px;
+        }
+    }
+    h5{
+        font-size:16px;
+        line-height: 20px;
+        color:#FFF;
+        font-family: 'D-DIN';
+        font-weight: bold;
+        text-align: left;
+        padding:0 0 22px;
+        margin:0;
+        @media(max-width: 990px){
+            margin: 0 30px;
+            text-align: center;
+        }
+    }
+    p.contacto{
+        font-size:16px;
+        line-height: 21px;
+        color:#FFF;
+        font-family: 'D-DIN';
+        font-weight: normal;
+        text-align: left;
+        padding:0 0;
+        margin:0;
+        @media(max-width: 990px){
+            margin: 0 30px;
+            text-align: center;
         }
     }
 

@@ -14,7 +14,7 @@ block content
                 
                 .col-sm-12.col-lg-7
         
-                    h2 La energía<br>que nos inspira a<br>aprender e innovar
+                    h2 La energía <br>que nos inspira a <br>aprender e innovar
                     
                     p Fundación YPF LAB es un espacio de interacción y participación para potenciar el conocimiento y la investigación en energía a través de contenidos, actividades, premios y concursos.
                     
@@ -23,33 +23,42 @@ block content
         .container-fluid
             .row
                 
+                .col-sm-12.selectioner
+                    select
+                        option(value="[0]") Seleccionar una categoría...
+                        option(value="[1,2]") EDUCACIÓN PRIMARIA
+                        option(value="[3,4]") EDUCACIÓN SECUNDARIA 
+                        option(value="[5,6]") EDUCACIÓN TÉC. PROFESIONAL
+                        option(value="[6,2]") EDUCACIÓN UNIVERSITARIA
+                        option(value="[1,5]") EDUCACIÓN UNIVERSITARIA
+                        
                 .col-sm-12
                     
-                    ul
-                        li EDUCACIÓN<br>PRIMARIA  
-                        li EDUCACIÓN<br>SECUNDARIA 
-                        li EDUCACIÓN<br>TÉC. PROFESIONAL
-                        li EDUCACIÓN<br>UNIVERSITARIA
-                        li EDUCACIÓN<br>CIUDADANA
+                    ul.categorias
+                        li(data-array="[1,2]") EDUCACIÓN<br>PRIMARIA  
+                        li(data-array="[3,4]") EDUCACIÓN<br>SECUNDARIA 
+                        li(data-array="[5,6]") EDUCACIÓN<br>TÉC. PROFESIONAL
+                        li(data-array="[6,2]") EDUCACIÓN<br>UNIVERSITARIA
+                        li(data-array="[1,5]") EDUCACIÓN<br>CIUDADANA
                     
                     .container-fluid
                         .links.row
                             
-                            a#link-1.col-sm-12.col-md-4.tipo1(href="#")
+                            a#link-1.col-sm-6.col-md-4.tipo1(href="#")
                                 img(src="images/im_damero-1.png")
                                 
-                            a#link-2.col-sm-12.col-md-4.tipo1(href="#")
+                            a#link-2.col-sm-6.col-md-4.tipo1(href="#")
                                 img(src="images/im_damero-2.png")
                                 
-                            a#link-3.col-sm-12.col-md-4.tipo2(href="#")
+                            a#link-3.col-sm-6.col-md-4.tipo2(href="#")
                                 span Vocaciones
-                            a#link-4.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-4.png');")
+                            a#link-4.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-4.png');")
                                 span Educación<br>Técnico<br>Profesional
                                        
-                            a#link-5.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-5.png');")
+                            a#link-5.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-5.png');")
                                 span MOOC y<br>Universidades
                                 
-                            a#link-6.col-sm-12.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-6.png');")
+                            a#link-6.col-sm-6.col-md-4.tipo3(href="#", style="background-image:url('images/im_damero-6.png');")
                                 span Desarrollo Local
                                 
                                 
@@ -62,10 +71,10 @@ block content
                     .container-fluid
                         .row
                             
-                            .col-sm-12.col-md-6(style="background-image:url('images/dummie/bg_premios.jpg');")
+                            .col-sm-12.col-lg-6.image(style="background-image:url('images/dummie/bg_premios.jpg');")
                                 .overlay
                                     
-                            .col-sm-12.col-md-6
+                            .col-sm-12.col-lg-6
                                 
                                 h4 Premios 2017
                                 
@@ -85,10 +94,10 @@ block content
                     .container-fluid
                         .row
                             
-                            .col-sm-12.col-md-6(style="background-image:url('images/dummie/bg_premios.jpg');")
+                            .col-sm-12.col-lg-6.image(style="background-image:url('images/dummie/bg_premios.jpg');")
                                 .overlay
                                     
-                            .col-sm-12.col-md-6
+                            .col-sm-12.col-lg-6
                                 
                                 h4 Premios 2018
                                 
@@ -136,25 +145,97 @@ block content
     .section-row.row-alianzas
         
         .container-fluid
+            
+            
             .row
-                .col-sm-12.col-md-8
+                
+                .col-sm-12
                     
                     h4 Alianzas Estratégicas
                     
-                    p En Fundación YPF, nos unimos a quienes tienen el conocimiento, la experienciay son parte de las esferas pública, público-privada y de la sociedad civil.Con todos ellos implementamos nuestros programas para lograr los objetivos de desarrollo sostenible.
+            .row
+                
+                .col-sm-12.selectioner
+                    select
+                        option(value="tab-1") Seleccionar una categoría...
+                        option(value="tab-2") Universidades y Organismos Académicos
+                        option(value="tab-3") Sector Público
+                        option(value="tab-4") Sociedas Civil
+                
+                .col-sm-12.col-md-4.col-md-push-8
                     
-                .col-sm-12.col-md-4
-                    
-                    ul
-                        li
-                            i(stlye="backgroud-image:url('images/');")
+                    ul.botones
+                        li(data-tab="2")
+                            i(style="background-image:url('images/im_alianza-1.png');")
                             span Universidades y Organismos Académicos
-                        li
-                            i(stlye="backgroud-image:url('images/');")
+                        li(data-tab="3")
+                            i(style="background-image:url('images/im_alianza-2.png');")
                             span Sector Público
-                        li
-                            i(stlye="backgroud-image:url('images/');")
+                        li(data-tab="4")
+                            i(style="background-image:url('images/im_alianza-3.png');")
                             span Sociedas Civil
+                            
+                .col-sm-12.col-md-8.col-md-pull-4
+                    
+                    .alianzas-tabs
+                        .tab.tab-1.active
+                            p En Fundación YPF, nos unimos a quienes tienen el conocimiento, la experienciay son parte de las esferas pública, público-privada y de la sociedad civil. Con todos ellos implementamos nuestros programas para lograr los objetivos de desarrollo sostenible.
+                        
+                        .tab.tab-2
+                            ul
+                                li.tipo-2
+                                    a(href="#") CONICET
+                                li.tipo-2
+                                    a(href="#") UNIVERSIDAD DE SAN ANDRÉS
+                                li.tipo-1
+                                    a(href="#") UNPSJB
+                                li.tipo-1
+                                    a(href="#") UNPA
+                                li.tipo-1
+                                    a(href="#") UNCOMA
+                                li.tipo-2
+                                    a(href="#") UNCUYO
+                                li.tipo-2
+                                    a(href="#") UNAJ
+                                li.tipo-2
+                                    a(href="#") UNSA
+                                li.tipo-1
+                                    a(href="#") UNJU
+                                li.tipo-1
+                                    a(href="#") UBA
+                                li.tipo-2
+                                    a(href="#") ITBA
+                                    
+                        .tab.tab-3
+                            ul
+                                li.tipo-1
+                                    a(href="#") GDFE
+                                li.tipo-2
+                                    a(href="#") ASHOKA
+                                li.tipo-3
+                                    a(href="#") SOCIAL LAB
+                                li.tipo-3
+                                    a(href="#") FUNDACIÓN VOZ
+                                li.tipo-3
+                                    a(href="#") RIL
+                                li.tipo-3
+                                    a(href="#") CIPPEC
+                                    
+                        .tab.tab-4
+                            ul
+                                li.tipo-1
+                                    a(href="#") GDFE
+                                li.tipo-2
+                                    a(href="#") ASHOKA
+                                li.tipo-3
+                                    a(href="#") SOCIAL LAB
+                                li.tipo-3
+                                    a(href="#") FUNDACIÓN VOZ
+                                li.tipo-3
+                                    a(href="#") RIL
+                                li.tipo-3
+                                    a(href="#") CIPPEC
+                        
 
 
     .section-row.row-recomendados
@@ -165,43 +246,48 @@ block content
                 .col-sm-12
         
                     h4 Sitios Recomendados
-                    
-                    ul
-                        li
-                            a(href="#") 
-                                | Universidad de Colorado
-                        li
-                            a(href="#") 
-                                | BP Energy Outlook
-                        li
-                            a(href="#") 
-                                | UNESCO 
-                                span Programa Mujeres en la Ciencia
-                        li
-                            a(href="#") 
-                                | Shale 
-                                span Hidrocarburos No Convencionales
-                        li
-                            a(href="#") 
-                                | ODS 
-                                span Consejo Nacional de Políticas Sociales
-                        li
-                            a(href="#") 
-                                | Cleannet
-                        li
-                            a(href="#") 
-                                | IAPG 
-                                span Sitios de Estadísticas
-                        li
-                            a(href="#") 
-                                | Dpto. de Energía de los EEUU
-                        li
-                            a(href="#") 
-                                | IEA 
-                                span Sitio de Estadísticas
-                        li
-                            a(href="#") 
-                                | Secretaría de Gobierno de Energía
+            
+        ul.clearfix
+            li
+                a(href="#", target="_blank") 
+                    | Universidad de Colorado
+                    span &nbsp;
+            li
+                a(href="#", target="_blank") 
+                    | BP Energy Outlook
+                    span &nbsp;
+            li
+                a(href="#", target="_blank") 
+                    | UNESCO 
+                    span Programa Mujeres en la Ciencia
+            li
+                a(href="#", target="_blank") 
+                    | Shale 
+                    span Hidrocarburos No Convencionales
+            li
+                a(href="#", target="_blank") 
+                    | ODS 
+                    span Consejo Nacional de Políticas Sociales
+            li
+                a(href="#", target="_blank") 
+                    | Cleannet
+                    span &nbsp;
+            li
+                a(href="#", target="_blank") 
+                    | IAPG 
+                    span Sitios de Estadísticas
+            li
+                a(href="#", target="_blank") 
+                    | Dpto. de Energía de los EEUU
+                    span &nbsp;
+            li
+                a(href="#", target="_blank") 
+                    | IEA 
+                    span Sitio de Estadísticas
+            li
+                a(href="#", target="_blank") 
+                    | Secretaría de Gobierno de Energía
+                    span &nbsp;
             
     
         
