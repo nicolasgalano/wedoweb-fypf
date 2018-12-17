@@ -293,7 +293,7 @@
     .container-fluid > .row > div{
         height: 68vh;
         max-height:800px;
-        min-height: 600px;
+        min-height: 700px;
         background-size: cover;
         background-position: center center;
     }
@@ -305,6 +305,7 @@
         .container-fluid > .row > div{
             height: auto;
             max-height:none;
+            min-height: 0;
         }
     }
     .overlay{
@@ -381,7 +382,9 @@
                 font-size:18px;
                 line-height:28px;
                 text-align: center;
-                margin: 4px 8px 4px 0;
+                margin: 0px 8px 0px 0;
+                width: 100%;
+                max-width: 270px;
                 &:last-child{
                     border-left:2px solid #5959FF;
                 }
@@ -547,6 +550,7 @@
         ul{
             padding:0 30px;
             margin:0;
+            text-align: center;
             li{
                 list-style: none;
                 float: left;
@@ -574,6 +578,24 @@
                 }
                 &.tipo-3{
                     width:280px;
+                }
+                @media(max-width: 650px){
+                    float:none;
+                    height: auto;
+                    padding:24px 20px 20px;
+                    display:inline-block;
+                    a{
+
+                    }
+                    &.tipo-1{
+                        width:auto;
+                    }
+                    &.tipo-2{
+                        width:auto;
+                    }
+                    &.tipo-3{
+                        width:auto;
+                    }
                 }
             }
         }
