@@ -70,7 +70,7 @@
         $('nav a.btn-menu').click(function(){
             $('nav').toggleClass('mobile-open');
         });
-        $('nav.mobile-open ul.menu a').click(function(){
+        $('nav ul.menu li').click(function(){
             $('nav').removeClass('mobile-open');
         });
 
