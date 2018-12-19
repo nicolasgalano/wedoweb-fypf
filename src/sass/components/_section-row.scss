@@ -793,6 +793,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding:180px 0 0;
+    @media(max-width: 800px){
+        padding:80px 0 0;
+    }
     h4{
         color:#0000FF;
         font-family: 'LibreBaskerville';
@@ -848,15 +851,22 @@
         max-width:none;
         .row{
             .col-texto, .col-mapa{
-                height:1000px;
+                height:1200px;
+                @media(max-width: 991px){
+                    height:auto;
+                }
             }
         }
     }
     .col-texto{
         background: #5959FF;
         .container-texto{
-            height:1000px;
+            height:1200px;
             display: table;
+            @media(max-width: 991px){
+                height:auto;
+                padding:40px 0 30px;
+            }
             .vertical-align{
                 display: table-cell;
                 vertical-align: middle;
@@ -865,12 +875,66 @@
     }
     .col-mapa{
         background: #59E0CE;
+        padding:96px 0 96px;
         .map{
-            background-size: cover;
             background-position: center center;
-            background-image: url('../images/s');
-            width:100%;
-            height:1000px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('../images/mapa-argentina.png');
+            width:457px;
+            margin:0 auto;
+            height:1006px;
+            position: relative;
+            @media(max-width: 470px){
+                width: 272px;
+                height: 600px;
+            }
+            .marker{
+                width:26px;
+                height:26px;
+                position: absolute;
+                cursor:pointer;
+                svg{
+                    width:26px;
+                    height:26px;
+                    float:left;
+                }
+                .texto{
+                    font-family: 'DINNextLTPro';
+                    font-size:12px;
+                    line-height:12px;
+                    font-weight: 400;
+                    position:absolute;
+                    top:0px;
+                    min-width: 60px;
+                }
+                &.pos-izq{
+                    .texto{ right:30px; text-align: right;}
+                }
+                &.pos-der{
+                    .texto{ left:30px; }
+                }
+                &.color-1{
+                    svg path{ fill: #FF0000 !important; }
+                    .texto{ color:#FF0000; }
+                }
+                &.color-2{
+                    svg path{ fill: #753BBD !important; }
+                    .texto{ color:#753BBD; }
+                }
+                &.color-3{
+                    svg path{ fill: #0000FF !important; }
+                    .texto{ color:#0000FF; }
+                }
+                &.color-4{
+                    svg path{ fill: #FF6D00 !important; }
+                    .texto{ color:#FF6D00; }
+                }
+                &.color-5{
+                    svg path{ fill: #FF0098 !important; }
+                    .texto{ color:#FF0098; }
+                }
+            }
         }
     }
 
@@ -925,7 +989,7 @@
 
 .row-diagnostico{
     background: #FF59BC;
-    height:340px;
+    height:auto;
 
     .pinkfloyd{
         background: #FF59BC;
@@ -998,12 +1062,6 @@
     background: #3CCE3C;
     padding-top:200px;
     padding-bottom:120px;
-    @media(max-width: 420px){
-        padding-top:250px;
-    }
-    @media(max-width: 380px){
-        padding-top:340px;
-    }
     button{
         display:block;
         padding:0;
