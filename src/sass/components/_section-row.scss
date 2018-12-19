@@ -925,12 +925,13 @@
 
 .row-diagnostico{
     background: #FF59BC;
-    height:auto;
+    height:340px;
 
     .pinkfloyd{
         background: #FF59BC;
         position: relative;
-        bottom:-160px;
+        bottom:-100px;
+        padding:0 10px 30px;
     }
 
     h4{
@@ -940,7 +941,7 @@
         line-height:30px;
         font-weight: 600;
         letter-spacing: 1px;
-        margin:0px 0 26px;
+        margin:0px 0 40px;
         padding:0 30px;
         @media(max-width: 800px){
             font-size:18px;
@@ -952,7 +953,376 @@
         font-family: 'D-DIN';
         font-size:40px;
         line-height:55px;
-        font-weight: 300;
+        font-weight: 400;
+        margin:0 0 0;
+        padding:0 30px 45px;
+        @media(max-width: 800px){
+            font-size:20px;
+            line-height:26px;
+        }
+    }
+    .botones{
+        padding:0;
+        margin:0 30px 20px;
+        a{
+            display: inline-block;
+            font-size:20px;
+            line-height:30px;
+            color:#33292f;
+            padding:6px 28px;
+            border:1px solid #33292f;
+            &:last-child{
+                border-left:0;
+            }
+            @media(max-width: 650px){
+                font-size:18px;
+                line-height:28px;
+                text-align: center;
+                margin: 0px 8px 0px 0;
+                width: 100%;
+                max-width: 270px;
+                &:last-child{
+                    border-left:1px solid #5959FF;
+                }
+            }
+            &:hover{
+                border-bottom-width: 5px;
+                padding-bottom:2px;
+            }
+        }
+    }
+
+}
+
+.row-formulario{
+    background: #3CCE3C;
+    padding-top:200px;
+    padding-bottom:120px;
+    @media(max-width: 420px){
+        padding-top:250px;
+    }
+    @media(max-width: 380px){
+        padding-top:340px;
+    }
+    button{
+        display:block;
+        padding:0;
+        color:#ff59bc;
+        font-family: 'D-DIN';
+        font-size:31px;
+        line-height:72px;
+        font-weight: bold;
+        text-align: center;
+        background:transparent;
+        border:2px solid #ff59bc;
+        width:240px;
+        height:72px;
+        margin:60px auto 0;
+    }
+    h5{
+        color:#FF59BC;
+        font-family: 'LibreBaskerville';
+        font-size:18px;
+        line-height:30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin:0px 0 30px;
+        padding:0 50px;
+        @media(max-width: 800px){
+            font-size:16px;
+            line-height:22px;
+        }
+    }
+    ul{
+        padding:0 0 0px;
+        margin:0;
+        li{
+            list-style:none;
+            border-bottom: 1px solid #FFF;
+            padding:0 0 20px;
+            @media(max-width: 800px){
+                padding:0 15px 20px;
+            }
+            .top-row, .bottom-row{
+                max-width:1100px;
+                width:96%;
+                margin:0 auto;
+            }
+            .top-row{
+                font-family: 'DINNextLTPro';
+                font-weight: 500;
+                padding:22px 0 8px;
+                & > span{
+                    color:#FF59BC;
+                    font-size: 24px;
+                    line-height: 30px;
+                    width:50px;
+                    padding-right:15px;
+                    display:inline-block;
+                    float:left;
+                    padding-top:4px;
+                    text-align: right;
+                    @media(max-width: 800px){
+                        font-size:18px;
+                        line-height:22px;
+                        width:40px;
+                    }
+                }
+                p{
+                    display:inline-block;
+                    color:#FFF;
+                    font-size: 24px;
+                    line-height: 30px;
+                    width:calc(100% - 207px);
+                    float:left;
+                    margin:0;
+                    padding-top:4px;
+                    @media(max-width: 800px){
+                        font-size:18px;
+                        line-height:22px;
+                        width: calc(100% - 40px);
+                        padding-bottom:20px;
+                    }
+                }
+                .pulldown{
+                    display:inline-block;
+                    width:150px;
+                    position: relative;
+                    float:right;
+                    @media(max-width: 800px){
+                        width:130px;
+                    }
+                    .value{
+                        cursor: pointer;
+                        color:#FF59BC;
+                        font-size: 20px;
+                        line-height: 27px;
+                        padding:0 45px 0 15px;
+                        overflow: hidden;
+                        width:100%;
+                        background:url('../images/ic_arrow-down.png') right center no-repeat;
+                        padding-top:7px;
+                        text-align: right;
+                    }
+                    .input-list{
+                        width:100%;
+                        display:none;
+                        position: absolute;
+                        top:62px;
+                        left:0;
+                        background-color: #c1e9b2;
+                        padding:0;
+                        margin:0;
+                        border-bottom:1px solid #FFF;
+                        z-index: 2;
+
+                        label{
+                            cursor:pointer;
+                            display:block;
+                            padding:0 0 0 15px;
+                            margin:0;
+                            width:100%;
+                            height:48px;
+                            color:#FF59BC;
+                            font-size: 20px;
+                            line-height: 54px;
+                            overflow: hidden;
+                            border:1px solid #FFF;
+                            border-bottom:0px;
+                            text-align: right;
+                            input{
+                                visibility: hidden;
+                                display: none;
+                            }
+                            span.radio{
+                                float: right;
+                                margin:17px 17px 0 15px;
+                                width:13px;
+                                height: 13px;
+                                border-radius: 13px;
+                                display:inline-block;
+                                background:url('../images/ic_circle-1.png') center center no-repeat;
+                                @media(max-width: 800px){
+                                    margin:17px 10px 0 15px;
+                                }
+                            }
+                            input:checked ~ span.radio {
+                                background-color: #ff59bc;
+                            }
+                        }
+                    }
+                    &.opened{
+                        .input-list{display:block;}
+                        .value{background-image:url('../images/ic_arrow-up.png');}
+                    }
+                }
+            }
+
+            .bottom-row{
+
+                textarea.lines{
+                    width:calc(100% - 50px);
+                    margin-left:50px;
+                    background-image: -webkit-linear-gradient(#3CCE3C, #3CCE3C 38px, #FF59BC 38px, #FF59BC 40px, #3CCE3C 40px);
+                    background-image: -moz-linear-gradient(#3CCE3C, #3CCE3C 38px, #FF59BC 38px, #FF59BC 40px, #3CCE3C 40px);
+                    background-image: -ms-linear-gradient(#3CCE3C, #3CCE3C 38px, #FF59BC 38px, #FF59BC 40px, #3CCE3C 40px);
+                    background-image: -o-linear-gradient(#3CCE3C, #3CCE3C 38px, #FF59BC 38px, #FF59BC 40px, #3CCE3C 40px);
+                    background-image: linear-gradient(#3CCE3C, #3CCE3C 38px, #FF59BC 38px, #FF59BC 40px, #3CCE3C 40px);
+                    background-size: 100% 40px;
+                    line-height: 40px;
+                    border:none;
+                    padding:4px 8px;
+                    color:#FFF;
+                    font-size: 20px;
+                    margin-bottom:10px;
+                    &:focus {
+                        outline: none !important;
+                    }
+                    @media(max-width: 800px){
+                        width:100%;
+                        margin-left:0px;
+                    }
+                }
+
+                .lista{
+
+                    width:calc(100% - 50px);
+                    margin-left:50px;
+                    padding:0px 0 30px;
+                    @media(max-width: 800px){
+                        margin-left: 0;
+                        width:100%;
+                    }
+                    .lista-item{
+                        padding:20px 0 0;
+                        .col-izq{
+                            float:left;
+                            width:calc(100% - 280px);
+                            h6{
+                                font-family: 'DINNextLTPro';
+                                font-weight: 500;
+                                font-size: 24px;
+                                line-height: 30px;
+                                color:#FFF;
+                                margin:30px 0 3px;
+                            }
+                            p{
+                                font-family: 'DINNextLTPro';
+                                font-weight: 200;
+                                font-size: 14px;
+                                line-height: 30px;
+                                color:#FFF;
+                                @media(max-width: 800px){
+                                    font-size:13px;
+                                    line-height:20px;
+                                }
+                            }
+                        }
+                        .col-der{
+                            float:right;
+                            width:280px;
+                            padding:0 15px 0 15px;
+                            .rango.justify{
+                                font-family: 'DINNextLTPro';
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 30px;
+                                color:#FFF;
+                                padding:0 7px 8px 3px;
+                                span{
+
+                                    &.span1{
+                                        float:left;
+                                    }
+                                    &.span2{
+                                        display: inline-block;
+                                        text-align: center;
+                                        width:90%;
+                                    }
+                                    &.span3{
+                                        float:right;
+                                    }
+                                }
+                            }
+                            .radios{
+
+                                label{
+                                    cursor:pointer;
+                                    input{
+                                        display:none;
+                                    }
+                                    span.radio{
+                                        float: right;
+                                        margin:0 2px 0 2px;
+                                        width:18px;
+                                        height: 18px;
+                                        border-radius: 18px;
+                                        display:inline-block;
+                                        background:url('../images/ic_circle-2.png') center center no-repeat;
+                                    }
+                                    input:checked ~ span.radio {
+                                        background-color: #ff59bc;
+                                    }
+                                }
+                            }
+                        }
+                        @media(max-width: 800px){
+                            .col-izq{
+                                width:100%;
+                            }
+                            .col-izq, .col-der{float:none;}
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+.row-material{
+    background:#C1E9B2;
+    padding:100px 0 100px;
+    h4{
+        color:#FF59BC;
+        font-family: 'LibreBaskerville';
+        font-size:18px;
+        line-height:30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin:20px 0 26px;
+        padding:0 30px;
+        @media(max-width: 800px){
+            font-size:18px;
+            line-height:22px;
+        }
+    }
+    h3{
+        font-family: 'D-DIN';
+        font-size:60px;
+        line-height:65px;
+        font-weight: bold;
+        color:#262626;
+        margin:0px 0 36px;
+        padding:0 30px;
+        @media(max-width: 800px){
+            font-size:30px;
+            line-height:35px;
+        }
+    }
+    .sep{
+        height:1px;
+        border-bottom:2px solid #FF59BC;
+        width:100px;
+        margin:0 0 50px 33px;
+    }
+    p{
+        color:#262626;
+        font-family: 'DINNextLTPro';
+        font-size:23px;
+        line-height:29px;
+        font-weight: 200;
         margin:0 0 0;
         padding:0 30px 40px;
         @media(max-width: 800px){
@@ -961,9 +1331,27 @@
         }
     }
 
-}
+    ul{
+        padding:65px 0 0;
 
-.row-formulario{
-    background: #79D059;
-    padding-top:160px;
+        li{
+            list-style: none;
+            border-bottom:1px solid #FFF;
+            &:last-child{
+                border-bottom:0;
+            }
+            a{
+
+                font-family: 'D-DIN';
+                font-size:31px;
+                line-height:38px;
+                font-weight: 600;
+                color:#FF59BC;
+                display:block;
+                padding:15px 60px 15px 0;
+                background:url('../images/ic_download.png') right center no-repeat;
+            }
+        }
+    }
+
 }

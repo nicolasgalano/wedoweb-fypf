@@ -107,6 +107,21 @@
             }
         });
 
+        //FORMULARIO
+        $('.row-formulario .pulldown .value').click(function(){
+            if(!$(this).parent().hasClass('opened')){
+                $('.row-formulario .pulldown').removeClass('opened');
+                $(this).parent().addClass('opened');
+            }else{
+                $('.row-formulario .pulldown').removeClass('opened');
+            }
+        });
+        $('.row-formulario .pulldown .input-list label').click(function(){
+            var $inputList = $(this).parent();
+            $inputList.parent().find('.value').text( $inputList.find('input:checked').val() );
+            $inputList.parent().removeClass('opened');
+        });
+
     });
 
 })(jQuery);

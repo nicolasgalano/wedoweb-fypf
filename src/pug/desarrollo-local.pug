@@ -29,7 +29,7 @@ block content
                     .container-texto
                         .vertical-align
                             h4 Laboratorio Urbano
-                            h3 Recursos parala planificaciónparticipativa.
+                            h3 Recursos parala planificación participativa.
                             .sep
                             p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.
                 .col-sm-12.col-md-6.col-mapa
@@ -41,116 +41,457 @@ block content
                 .col-sm-12
                     .pinkfloyd
                         h4 Diagnóstico
-                        p Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ipsum dolor sit amet, consectetuer adipiscing elit, sed ipsum dolor sit amet, consectetuer adipiscing elit, sed ipsum dolor sit amet, consectetuer.
                         .botones
                             a(href="#") Formulario de Diagnóstico
                             a(href="#") Material de Consulta
                             
     .section-row.row-formulario
-        .container-fluid
-            .row
-                .col-sm-12.verde
-                    h5 Formulario de Diagnóstico
-                    ul
-                        li
-                            .top-row
-                                span 1.
-                                p Texto
-                                .pulldown
-                                    .value +10.000
-                                    .input-list
+        form(action="")
+            .container-fluid
+                .row
+                    .col-sm-12.verde
+                        h5 Formulario de Diagnóstico
+                        
+            ul.formulario
+                li
+                    .top-row.clearfix
+                        span 1.
+                        p Personas que viven en zonas urbanizadas del municipio
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio1", value="+10.000", checked)
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio1", value="+15.000")
+                                    span.radio
+                                label
+                                    | +20.000
+                                    input(type="radio", name="radio1", value="+20.000")
+                                    span.radio
+                                label
+                                    | +30.000
+                                    input(type="radio", name="radio1", value="+30.000")
+                                    span.radio
+                    
+                li
+                    .top-row.clearfix
+                        span 2.
+                        p Hectáreas de espacios recreativos públicos por habitante
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio2", value="+10.000", checked)
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio2", value="+15.000")
+                                    span.radio
+                                label
+                                    | +20.000
+                                    input(type="radio", name="radio2", value="+20.000")
+                                    span.radio
+                                label
+                                    | +30.000
+                                    input(type="radio", name="radio2", value="+30.000")
+                                    span.radio
+                li
+                    .top-row.clearfix
+                        span 3.
+                        p Existencia de plan maestro actualizado y legalmente vinculado para la disposición del uso del suelo
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio3", value="+10.000", checked)
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio3", value="+15.000")
+                                    span.radio
+                                label
+                                    | +20.000
+                                    input(type="radio", name="radio3", value="+20.000")
+                                    span.radio
+                                label
+                                    | +30.000
+                                    input(type="radio", name="radio3", value="+30.000")
+                                    span.radio
+                                        
+                li
+                    .top-row.clearfix
+                        span 4.
+                        p Hectáreas de espacios recreativos públicos por habitante
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio4", value="+10.000", checked)
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio4", value="+15.000")
+                                    span.radio
+                                label
+                                    | +20.000
+                                    input(type="radio", name="radio4", value="+20.000")
+                                    span.radio
+                                label
+                                    | +30.000
+                                    input(type="radio", name="radio4", value="+30.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 5.
+                        p Sistema público de salud
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio5", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio5", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        textarea.lines(cols="50", rows="4")
+                
+                li
+                    .top-row.clearfix
+                        span 6.
+                        p Herramientas, medidas, políticas y espacios para la promoción del desarrollo económico local
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio6", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio6", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        textarea.lines(cols="50", rows="4")
+                
+                li
+                    .top-row.clearfix
+                        span 7.
+                        p Promedio toneladas diarias de generación de residuos sólidos
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio7", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio7", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 8.
+                        p Infraestructura y recursos para la gestión de residuos
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio8", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio8", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        textarea.lines(cols="50", rows="4")
+                
+                li
+                    .top-row.clearfix
+                        span 9.
+                        p Porcentaje de hogares con conexiones domiciliarias a la red de agua
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio9", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio9", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 10.
+                        p Consumo anual per capita de agua
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio10", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio10", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 11.
+                        p Porcentaje de área urbana con sistema de drenaje pluvial
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio11", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio11", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 12.
+                        p Porcentaje de hogares con conexión autorizada a la red eléctrica
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio12", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio12", value="+15.000")
+                                    span.radio
+                    
+                li
+                    .top-row.clearfix
+                        span 13.
+                        p Consumo residencial anual de electricidad por hogar
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio13", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio13", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 14.
+                        p Porcentaje de hogares con conexión autorizada a la red de suministro de gas natural
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio14", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio14", value="+15.000")
+                                    span.radio
+                
+                li
+                    .top-row.clearfix
+                        span 15.
+                        p Proyecciones o proyectos vinculados a energías renovables
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio15", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio15", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        textarea.lines(cols="50", rows="4")
+                
+                li
+                    .top-row.clearfix
+                        span 16.
+                        p Gestión de reclamos, espacios de planificación y participación
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio16", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio16", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        textarea.lines(cols="50", rows="4")
+                
+                li
+                    .top-row.clearfix
+                        span 17.
+                        p Clasifique del 1 al 10 la percepción que tiene de la ciudad en cuanto al desarrollo de los siguientes temas:
+                        .pulldown
+                            .value +10.000
+                            .input-list
+                                label
+                                    | +10.000
+                                    input(type="radio", name="radio17", value="+10.000")
+                                    span.radio
+                                label
+                                    | +15.000
+                                    input(type="radio", name="radio17", value="+15.000")
+                                    span.radio
+                    .bottom-row
+                        .lista
+                            .lista-item.clearfix
+                                .col-izq
+                                    h6 Participación
+                                    p (10: amplia oferta de espacios de participación, 0: nula oferta de espacios de participación)
+                                .col-der
+                                    .rango.justify.clearfix
+                                        span.span1 0
+                                        span.span2 +
+                                        span.span3 10
+                                    .radios
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_1", value="1")
                                             span.radio
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_1", value="2")
                                             span.radio
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_1", value="3")
                                             span.radio
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_1", value="4")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="5")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="6")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="7")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="8")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="9")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_1", value="10")
+                                            span.radio
+                                
+                            .lista-item.clearfix
+                                .col-izq
+                                    h6 Movilidad sostenible
+                                    p (10: amplia oferta de infraestructura e información para la promoción del transporteno motorizado, 1: nula oferta de infraestructura e información para la promoción del transporte no motorizado)
+                                .col-der
+                                    .rango.justify.clearfix
+                                        span.span1 0
+                                        span.span2 +
+                                        span.span3 10
+                                    .radios
+                                        label
+                                            input(type="radio", name="radio17_2", value="1")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="2")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="3")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="4")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="5")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="6")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="7")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="8")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="9")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_2", value="10")
                                             span.radio
                             
-                        li
-                            .top-row
-                                span 1.
-                                p Texto
-                                .pulldown
-                                    .value +10.000
-                                    .input-list
+                            .lista-item.clearfix
+                                .col-izq
+                                    h6 Diversificación productiva
+                                    p (10: amplia dependencia de un sector productivo, 1: amplia diversificación del sector productivo)
+                                .col-der
+                                    .rango.justify.clearfix
+                                        span.span1 0
+                                        span.span2 +
+                                        span.span3 10
+                                    .radios
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_3", value="1")
                                             span.radio
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
-                                            span.radio
-                            .bottom-row
-                                textarea.lines(cols="50", rows="10")
-                        
-                        li
-                            .top-row
-                                span 1.
-                                p Texto
-                                .pulldown
-                                    .value +10.000
-                                    .input-list
-                                        label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_3", value="2")
                                             span.radio
                                         label
-                                            | +10.000
-                                            input(type="radio", value="+10.000")
+                                            input(type="radio", name="radio17_3", value="3")
                                             span.radio
-                            .bottom-row
-                                .lista
-                                    .lista-item
-                                        .col-izq
-                                            h6 Participación
-                                            p (10: amplia oferta de espacios de participación, 0: nula oferta de espacios de participación)
-                                        .col-der
-                                            .rango.justify
-                                                0 + 10
-                                            .radios
-                                                label
-                                                    input(type="radio", value="1")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="2")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="3")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="4")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="5")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="6")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="7")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="8")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="9")
-                                                    span.radio
-                                                label
-                                                    input(type="radio", value="10")
-                                                    span.radio
-                    
-                    button Enviar                            
+                                        label
+                                            input(type="radio", name="radio17_3", value="4")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="5")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="6")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="7")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="8")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="9")
+                                            span.radio
+                                        label
+                                            input(type="radio", name="radio17_3", value="10")
+                                            span.radio
+            
+            button Enviar                            
                                     
                             
     .section-row.row-material
